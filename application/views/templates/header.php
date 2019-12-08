@@ -1,110 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!DOCTYPE HTML>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Mona - Model Agency HTML5 Template">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Work Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
 
-  <!-- Title -->
-  <title>Mona - Model Agency HTML5 Template</title>
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="./img/core-img/favicon.ico">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
 
-  <!-- Core Stylesheet -->
-  <link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="<?php echo base_url('') ?>assets/css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="<?php echo base_url('') ?>assets/css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="<?php echo base_url('') ?>assets/css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="<?php echo base_url('') ?>assets/css/flexslider.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="<?php echo base_url('') ?>assets/css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="<?php echo base_url('') ?>assets/js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
 
 </head>
-
 <body>
-  <!-- Preloader -->
-  <div id="preloader">
-    <div class="wrapper">
-      <div class="cssload-loader"></div>
-    </div>
-  </div>
+	<div id="colorlib-page">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+			<h1 id="colorlib-logo"><a href="index.html"><span>Wo</span><span>rk</span></a></h1>
+			<nav id="colorlib-main-menu" role="navigation">
+				<ul>
+					<li class="<?php if ($page == 'Home'): ?>colorlib-active<?php endif; ?>"><a href="<?php echo base_url('home') ?>">Home</a></li>
+					<li class="<?php if ($page == 'Work'): ?>colorlib-active<?php endif; ?>"><a href="<?php echo base_url('work') ?>">Work</a></li>
+					<li class="<?php if ($page == 'About'): ?>colorlib-active<?php endif; ?>"><a href="<?php echo base_url('about') ?>">About</a></li>
+					<li class="<?php if ($page == 'Services'): ?>colorlib-active<?php endif; ?>"><a href="<?php echo base_url('services') ?>">Services</a></li>
+					<li class="<?php if ($page == 'Blog'): ?>colorlib-active<?php endif; ?>"><a href="<?php echo base_url('blog') ?>">Blog</a></li>
+					<li class="<?php if ($page == 'Contact'): ?>colorlib-active<?php endif; ?>"><a href="<?php echo base_url('contact') ?>">Contact</a></li>
+				</ul>
+			</nav>
 
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area">
-    <!-- Main Header Start -->
-    <div class="main-header-area">
-      <div class="classy-nav-container breakpoint-off">
-        <!-- Classy Menu -->
-        <nav class="classy-navbar justify-content-between" id="monaNav">
+			<div class="colorlib-footer">
+				<p>
+					<small><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </span> <span>Demo Images: <a href="http://nothingtochance.co/" target="_blank">nothingtochance.co</a></span>
+					</small>
+				</p>
+				<ul>
+					<li><a href="#"><i class="icon-facebook2"></i></a></li>
+					<li><a href="#"><i class="icon-twitter2"></i></a></li>
+					<li><a href="#"><i class="icon-instagram"></i></a></li>
+					<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+				</ul>
+			</div>
 
-          <!-- Background Curve -->
-          <div class="bg-curve" style="background-image: url(./img/core-img/curve.png);"></div>
+		</aside>
 
-          <!-- Logo -->
-          <a class="nav-brand" href="index.html"><img src="./img/core-img/logo.png" alt=""></a>
-
-          <!-- Navbar Toggler -->
-          <div class="classy-navbar-toggler">
-            <span class="navbarToggler"><span></span><span></span><span></span></span>
-          </div>
-
-          <!-- Menu -->
-          <div class="classy-menu">
-            <!-- Menu Close Button -->
-            <div class="classycloseIcon">
-              <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-            </div>
-
-            <!-- Nav Start -->
-            <div class="classynav">
-              <ul id="nav">
-                <li class="current-item"><a href="./index.html">Home</a></li>
-                <li><a href="#">Pages</a>
-                  <ul class="dropdown">
-                    <li><a href="./index.html">- Home</a></li>
-                    <li><a href="./about.html">- About Us</a></li>
-                    <li><a href="./projects.html">- Projects</a></li>
-                    <li><a href="./models.html">- Models</a></li>
-                    <li><a href="./casting.html">- Casting</a></li>
-                    <li><a href="./blog.html">- Blog</a></li>
-                    <li><a href="./single-blog.html">- Blog Details</a></li>
-                    <li><a href="./contact.html">- Contact</a></li>
-                    <li><a href="#">- Dropdown</a>
-                      <ul class="dropdown">
-                        <li><a href="#">- Dropdown Item</a></li>
-                        <li><a href="#">- Dropdown Item</a>
-                          <ul class="dropdown">
-                            <li><a href="#">- Even Dropdown</a></li>
-                            <li><a href="#">- Even Dropdown</a></li>
-                            <li><a href="#">- Even Dropdown</a></li>
-                            <li><a href="#">- Even Dropdown</a></li>
-                          </ul>
-                        </li>
-                        <li><a href="#">- Dropdown Item</a></li>
-                        <li><a href="#">- Dropdown Item</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li><a href="./projects.html">Project</a></li>
-                <li><a href="./models.html">Models</a></li>
-                <li><a href="./casting.html">Casting</a></li>
-                <li><a href="#">Blog</a>
-                  <ul class="dropdown">
-                    <li><a href="./blog.html">- Blog</a></li>
-                    <li><a href="./single-blog.html">- Blog Details</a></li>
-                  </ul>
-                </li>
-                <li><a href="./contact.html">Contact</a></li>
-              </ul>
-
-              <!-- Search Icon -->
-              <div class="search-icon" data-toggle="modal" data-target="#searchModal">
-                <i class="icon_search"></i>
-              </div>
-            </div>
-            <!-- Nav End -->
-
-          </div>
-        </nav>
-      </div>
-    </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
+        <div id="colorlib-main">
